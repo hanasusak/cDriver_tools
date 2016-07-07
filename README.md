@@ -34,3 +34,7 @@ Rscript cDriver.run.R -m CLL+SLL_385_noFilter.maf -p 5e-05
 ```
 
 ### Output from cDriver tool
+
+  - Log file (.txt extension)
+  - Results tab separated file (.tsv extension)
+  - Genereted plots in one PDF file (if option to plot was chosen)
