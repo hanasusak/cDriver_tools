@@ -30,7 +30,7 @@ Rscript cDriver.run.R -h
 ```
 Here you can get familiar with input variables for cDriver tool. Then you can run it with example CLL file:
   ```Shell
-Rscript cDriver.run.R -m CLL+SLL_385_noFilter.maf -p 5e-05 -g CLL_Gold_Standard_Genes.txt 
+Rscript cDriver.run.R -m CLL_maf_like_file.txt -p 5e-05 -g CLL_Gold_Standard_Genes.txt 
 ```
 
 ### Output from cDriver tool
