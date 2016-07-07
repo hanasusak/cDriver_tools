@@ -10,11 +10,11 @@
     * MAF file (specification [link](https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+(MAF)+Specification))
     with additional columns (VAF, Damage_score, Ploidy, CCF_SNV). This file is required for the cDriver analysis 
     (but only  additional column VAF is obligatory and others are recommended).  
-    *VAF* is abbreviation for Variant Allele Frequency, calculated as ratio between alternative reads and total number of reads.  
-    *Damage_score*  in this file is CADD score normalized between 0 and 1.  
-    *Ploidy* is integer number, where 1 means there is a deletion and 3 or more means that in region of this variant there is a copy gain. 
+    **VAF** is abbreviation for Variant Allele Frequency, calculated as ratio between alternative reads and total number of reads.  
+    **Damage_score**  in this file is CADD score normalized between 0 and 1.  
+    **Ploidy** is integer number, where 1 means there is a deletion and 3 or more means that in region of this variant there is a copy gain. 
     Ploidy equal to 2 is for normal state.  
-    *CCF_SNV* is value between 0 and 1 and it represents in which fraction of cancer cells this ploidy is observed (for Ploidy 2, CCF_SNV is 1). 
+    **CCF_SNV** is value between 0 and 1 and it represents in which fraction of cancer cells this ploidy is observed (for Ploidy 2, CCF_SNV is 1). 
     
 ### Requirements
 
