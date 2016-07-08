@@ -1,5 +1,9 @@
 # cDriver_tools
 
+Here you can find wrapper script for cDriver R package, with example input files. In this way you can run **driver genes analysis** as *black box*. 
+
+Manuscript is in preparation, and as soon it is online available we will provide a link.
+
 ### Included files:
 
   - README file (this one) 
@@ -23,6 +27,8 @@
   - sudo rights (or that you are allowed to install R packages and their dependencies)
 
 ### Instructions to run cDrirver 
+
+Dowload files from this repository, and follow insturctions bellow:
 
   Open your shell and type  first:
   ```Shell
