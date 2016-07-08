@@ -88,7 +88,8 @@ link <- getURL("https://raw.githubusercontent.com/hanasusak/cDriver/master/DESCR
 lines <- unlist(strsplit(link, '\n'))
 vers.line <- lines[grepl('^Version:', lines)]
 vers.line <- gsub('Version:', '', vers.line)
-vers.line <- trimws(vers.line)
+trim <- function (x) gsub("^\\s+|\\s+$", "", x)
+vers.line <- trim(vers.line)
 
 if (packageVersion('cDriver') != vers.line) {
    if(!'devtools' %in% installed.packages()){
