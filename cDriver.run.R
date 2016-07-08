@@ -16,7 +16,7 @@ rm(list=ls())
 ######################################################################################
 # handling arguments
 if(! 'argparse' %in% installed.packages()) {
-   install.packages('argparse', verbose=F)
+   install.packages('argparse', verbose=F, repos='http://cran.us.r-project.org', type = "source")
 }
 suppressPackageStartupMessages(library(argparse))
 
