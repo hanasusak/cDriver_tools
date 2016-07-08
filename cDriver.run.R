@@ -100,6 +100,7 @@ if (packageVersion('cDriver') != vers.line) {
    cat(paste0("Installing new version of cDriver package ..."), file=logFile, append=TRUE, sep = "\n")
    install_github("hanasusak/cDriver",quiet=T)     
 }
+suppressPackageStartupMessages(library(cDriver))
 
 
 print(paste('Input Maf File: ',file.maf))
@@ -251,17 +252,24 @@ if(to.plot){
          }
       }
    }
+   
    p1 <- plotSamplesMut(sample.mutations=cancer.maf)
    p1 <- p1 + ggtitle('Number of mutations per sample') + theme(plot.title = element_text(size = 20, face = "bold"))
+   
    p2 <- plotSamplesMut(sample.mutations=cancer.maf, fill=T)
    p2 <- p2 + ggtitle('Type of mutation proportion') + theme(plot.title = element_text(size = 20, face = "bold"))
+   
    p3 <- plotMutChange(sample.mutations=cancer.maf)
    p3 <- p3 + ggtitle('Type of mutation change proportion') + theme(plot.title = element_text(size = 20, face = "bold"))
+   
    #p4 <- boxplotCCF.mutations(sample.mutations=cancer.maf, result.df=res.final, color="Variant_Classification")
+   
    p5 <- boxplotCCF.mutations(sample.mutations=cancer.maf, result.df=res.final, color="Damage_score", shape="Variant_Type")
    p5 <- p5 + ggtitle('Top 20 cDriver ranked genes \n Mutations CCF boxplots ') + theme(plot.title = element_text(size = 20, face = "bold"))
+   
    p6 <- boxplotCCF.patients(sample.mutations=cancer.maf, result.df=res.final)
    p6 <- p6 + ggtitle('Top 20 cDriver ranked genes \n Patient-Gene max CCF boxplots ') + theme(plot.title = element_text(size = 20, face = "bold"))
+   
    p7 <- plotStaircase(sample.mutations=cancer.maf, result.df=res.final, allSamples=T)
    p7 <- p7 + ggtitle('Staircase plot for top 40 cDriver ranked genes ') + theme(plot.title = element_text(size = 20, face = "bold"))
    
