@@ -15,6 +15,10 @@ rm(list=ls())
 
 ######################################################################################
 # handling arguments
+if(! 'rjson' %in% installed.packages()) {
+   install.packages('rjson', verbose=F, repos='http://cran.us.r-project.org')
+}
+
 if(! 'argparse' %in% installed.packages()) {
    install.packages('argparse', verbose=F, repos='http://cran.us.r-project.org', type = "source")
 }
@@ -60,7 +64,7 @@ logFile <- paste0(getwd(),paste0('/cDriver_log_file_',format(Sys.time(), format 
 cat(timestamp(), file=logFile, append=FALSE, sep = "\n")
 
 if(! 'ggplot2' %in% installed.packages()) {
-   install.packages('ggplot2', verbose=F)
+   install.packages('ggplot2', verbose=F,  repos='http://cran.us.r-project.org')
 }
 suppressPackageStartupMessages(library(ggplot2))
 
@@ -76,7 +80,7 @@ if(!'cDriver' %in% installed.packages()) {
 suppressPackageStartupMessages(library(cDriver))
 
 if(! 'RCurl' %in% installed.packages()) {
-   install.packages('RCurl', verbose=F)
+   install.packages('RCurl', verbose=F,  repos='http://cran.us.r-project.org')
 }
 suppressPackageStartupMessages(library(RCurl))
 
