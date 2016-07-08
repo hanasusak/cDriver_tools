@@ -2,7 +2,7 @@
 
 Here you can find wrapper script for cDriver R package, with example input files. In this way you can run **driver genes analysis** as *black box*. 
 
-Manuscript is in preparation, and as soon it is online available we will provide a link.
+Manuscript for cDriver is in preparation, and as soon it is online available we will provide a link.
 
 ### Included files:
 
