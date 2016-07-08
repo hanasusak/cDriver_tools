@@ -25,6 +25,7 @@ Manuscript for cDriver is in preparation, and as soon it is online available we 
 
   - installed R (>= 3.1.0)
   - sudo rights (or that you are allowed to install R packages and their dependencies)
+  - MPFR C library version 3.0.0 or higher
 
 ### Instructions to run cDrirver 
 
