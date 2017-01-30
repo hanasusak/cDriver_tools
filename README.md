@@ -45,3 +45,6 @@ Rscript cDriver.run.R -m CLL_maf_like_file.txt -p 5e-05 -c CLL_Gold_Standard_Gen
   - Log file (.txt extension)
   - Results tab separated file (.tsv extension)
   - Genereted plots in one PDF file (if option to plot was chosen)
+
+# License
+This project is licensed under the terms of the MIT license. 
